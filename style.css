@@ -499,7 +499,11 @@ article:nth-child(2n+2)
     background: #d1d1d1;
 }
 /*end of horizontal project scroll*/
-
+.third_body .table img{
+  height: 28vh;
+  width: auto;
+  padding: 0 0 0 3%;
+}
 /*fourth body*/
 
 .fourth_body{
@@ -766,7 +770,17 @@ width:110px;
   color: #002244;
   font-family: 'Baloo Bhaina', cursive;
 }
-
+.img-circle{
+  height: 20vh;
+  width: auto;
+  border-radius: 50%;
+}
+#prof-font{
+  color: #292929;
+  text-align: justify;
+  font-family: 'Bitter', serif;
+  padding: 0 0 0 5%;
+}
 .btn-xlg{
   padding:13px;
   background-color:#AC2C17;
