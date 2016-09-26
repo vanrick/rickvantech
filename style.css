@@ -417,8 +417,8 @@ font-family: 'Baloo Bhaina', cursive;
 .second_body{
   background-color: #B4E5F3;
   height: 100vh;
-}
   width: 100%;
+}
 @media (max-width:360px){
   .second_body h1{
     margin-top: 10%;
@@ -463,9 +463,8 @@ font-family: 'Baloo Bhaina', cursive;
   height: 15vh;
   width: auto;
 }
-.third_body h1{
-  padding-top: 7%;
-  padding-left: 7%;
+.hh1{
+ padding: 7% 0 0 7%;
 }
 
 
@@ -514,13 +513,16 @@ article:nth-child(2n+2)
     height: auto;
   }
 }
+.fourth_body .col-md-offset-8{
+  padding-top: 2%;
+}
 .fourth_body h1 img{
   height: 23vh;
   width: auto;
 }
 .fourth_body h1{
   font-family: 'Baloo Bhaina', cursive;
-  padding-top: 2%;
+  color: #FEE818;
 }
 .fourth_body h2{
   color: #273041;blue
