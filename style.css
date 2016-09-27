@@ -463,6 +463,12 @@ font-family: 'Baloo Bhaina', cursive;
   height: 15vh;
   width: auto;
 }
+.third_body h3{
+  color: #13A89E;
+}
+.third_body p{
+  color: #13A89E;
+}
 .hh1{
  padding: 7% 0 0 7%;
 }
