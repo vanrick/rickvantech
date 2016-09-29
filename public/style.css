@@ -419,11 +419,31 @@ font-family: 'Baloo Bhaina', cursive;
   height: 100vh;
   width: 100%;
 }
-@media (max-width:480px){
+.clickable_icons button{
+  margin: 0 2% 2% 0;
+  transition: all .2s ease-in-out;
+}
+
+.clickable_icons button:hover{
+  transform: scale(1.1);
+  background-color: #B4E5F3;
+  border: 1px solid black;
+}
+.resume_btn{
+  background-color: black;
+  font-family: 'Baloo Bhaina', cursive;
+}
+@media (max-width:900px){
   .second_body h1{
     margin-top: 10%;
     padding-left: 30%;
     height: auto;
+  }
+}
+@media (max-width:900px){
+  .second_body{
+    height: auto;
+    width: 100%;
   }
 }
 .second_body .col-md-offset-5{
@@ -793,9 +813,24 @@ width:110px;
   font-family: 'Bitter', serif;
   padding: 0 0 0 5%;
 }
-.btn-xlg{
+.clickable_icons .contact-btn{
+  margin: 0 2% 2% 0;
+  transition: all .2s ease-in-out;
+}
+
+.clickable_icons .contact-btn:hover{
+  transform: scale(1.1);
+  background-color: #538BF4;
+  border: 1px solid black;
+}
+.contact-btn{
+  background-color:#AC2C17;
+  font-family: 'Baloo Bhaina', cursive;
+}
+
+/*.clickable_icons .contact-btn{
   padding:13px;
   background-color:#AC2C17;
   font-size: 1.6em;
   font-family: 'Baloo Bhaina', cursive;
-}
+}*/

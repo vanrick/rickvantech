@@ -31,12 +31,17 @@ $(document).ready(function () {
   });
 
   console.log("number of skillbars"+ $('.skillbar').length);
+function waitPlease(){
+
   $('.skillbar').each(function(){
     console.log('oh no!');
     $(this).find('.skillbar-bar').animate({
       width:$(this).attr('data-percent')
     },6000);
   })
+
+}
+  setTimeout(waitPlease, 2000);
 
 }); // end of ready function
 
