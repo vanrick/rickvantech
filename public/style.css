@@ -379,6 +379,12 @@ font-family: 'Baloo Bhaina', cursive;
 .yellow{
   color: #FEE818;
 }
+.white{
+  color: white;
+}
+.dark_blue{
+  color: #273041
+}
 .logo{
   height: 40px;
   width: 70px;
@@ -483,14 +489,15 @@ font-family: 'Baloo Bhaina', cursive;
   height: 15vh;
   width: auto;
 }
-.third_body h3{
-  color: #13A89E;
+/*.third_body h3{
+  color: #273041;
 }
 .third_body p{
-  color: #13A89E;
-}
-.hh1{
- padding: 7% 0 0 7%;
+  color: #273041;
+}*/
+
+.project_title{
+ padding: 0 0 1% 0;
 }
 
 
@@ -514,7 +521,7 @@ article {
     width: 400px;
     height: 400px;
     display: table-cell;
-    background: #e3e3e3;
+    background: #B4E5F3;
     vertical-align: middle;
     text-align: center;
 }
@@ -522,7 +529,7 @@ article {
 /*// Some styling for contrast.*/
 article:nth-child(2n+2)
 {
-    background: #d1d1d1;
+    background: #273041;
 }
 /*end of horizontal project scroll*/
 .third_body .table img{
@@ -540,7 +547,7 @@ article:nth-child(2n+2)
 @media (max-width:480px){
   .fourth_body {
     margin-top: 2%;
-    height: auto;
+    height: 100vh;
   }
 }
 .fourth_body .col-md-offset-8{
@@ -565,22 +572,28 @@ article:nth-child(2n+2)
   font-family: 'Bitter', serif;
 }
 .college{
-  /*border: 1px solid black;*/
   height: auto;
+  padding: 0 0 0 5%;
 }
 .college2{
   /*border: 1px solid black;*/
   height: auto;
   margin-top: 5%;
+  padding: 0 0 0 5%;
 }
 .college3{
-  /*border: 1px solid black;*/
   height: auto;
   margin-top: 10%;
+  padding: 0 2.3% 0 5%;
 }
-.fourth_body .col-md-4{
-  /*border: 1px solid black;*/
+.clickable_icons .college3 a h2{
+  margin: 0 2% 2% 0;
+  transition: all .2s ease-in-out;
+}
 
+.clickable_icons .college3 a h2:hover{
+  transform: scale(1.1);
+  font-weight: bolder;
 }
 
 /*fifth body*/
@@ -595,42 +608,36 @@ article:nth-child(2n+2)
 
 .fifth_body{
   background-color: #516790;
-  height: 110vh;
+  height: 120vh;
   width: 100%;
 }
 .fifth_body h1{
   font-family: 'Baloo Bhaina', cursive;
-  padding-left: 10%
+  color: #FEE818;
 }
-.fifth_body img{
-  height: 30vh;
+.fifth_body .project_title img{
+  height: 18vh;
   width: auto;
+  padding: 0 0 0 3%;
 }
-.skillz{
-
-}
-.fifth_body .skillz{
- padding: 5% 0 0 0;
- align-self: center;
+.fifth_body .col-md-offset-1{
+  padding: 1% 0 0 0;
 }
 
-.fifth_body .skillz-box{
- padding: 2% 0 0 20%;
- align-self: center;
-}
-@media (max-width:1280px){
-
+/*.fifth_body .skillz-box{
+ padding: 0 0 1% 0;
+}*/
+@media (max-width:1230px){
   .skills-box {
     margin: 0;
   }
-  .fifth_body img{
-    height: 20vh;
-    width: auto;
-    padding: 0 0 0 15%;
+  .fifth_body .col-md-offset-1{
+    padding: 0 0 0 0;
   }
    .fifth_body{
-     height: auto;
+     height: 100vh;
      width: 100%;
+     padding: 0 0 5% 2%;
    }
 }
 /*progress bar start*/
@@ -642,8 +649,8 @@ p{
 .skillbar {
 	position:relative;
 	display:block;
-	margin-bottom:15px;
-	width:60%;
+	margin-bottom:1%;
+	width:77%;
 	background:#eee;
 	height:35px;
 	border-radius:3px;
@@ -713,80 +720,61 @@ width:110px;
 }
 /*progress bar end*/
 
-/*seventh body*/
+/*sixth body*/
 
 .sixth_body{
   background-color: #FEE817;
   height: 100vh;
   width: 100%;
 }
-@media (max-width:800px){
-   .sixth_body{
-     height: auto;
-     width: 100%;
-   }
+.sixth_body #down{
+ float: right;
+ margin: 0 16% 0 0;
+ padding-top: 5%;
+}
+.sixth_body h1{
+  font-family: 'Baloo Bhaina', cursive;
+  color: #273041;
 }
 
-/*.sixth_body div {border: 1px solid black;}*/
-
-#parent {overflow: hidden;}
-#up {
-  float: right;
-  margin: 0 14% 0 0;
-   }
-  #up h1{
-    font-family: 'Baloo Bhaina', cursive;
-    color: #273041;
-    padding: 10% 0 0 20%;
-  }
-#down{
-  clear: right;
-  float: right;
-  margin: 0 14% 0 0;
+.sixth_body #down2{
+  float: left;
+  margin: 0 0 0 16%;
+  padding-top: 5%;
 }
-#down p{
+.sixth_body img{
+  height: 10vh;
+  width: auto;
+}
+.sixth_body p{
   font-family: 'Bitter', serif;
   color: black;
   font-size: 1em;
 }
-/*#parent {overflow: hidden;}*/
-#up2 {
-  float: left;
-  margin: 0 0 0 14%;
+.sixth_body h3{
+  font-family: 'Baloo Bhaina', cursive;
+  color: black;
+}
+@media (max-width:800px){
+   .sixth_body{
+     height: 100vh;
+     width: 100%;
    }
-
-  #up2 h1{
-    font-family: 'Baloo Bhaina', cursive;
-    color: #273041;
-    padding: 10% 0 0 20%;
-  }
-  #down2 h3{
-    font-family: 'Baloo Bhaina', cursive;
-    color: black;
-    /*padding: 10% 0 0 20%;*/
-  }
-  #down2 p{
-    font-family: 'Bitter', serif;
-    color: black;
-    font-size: 1em;
-    /*padding: 10% 0 0 20%;*/
-  }
-#down2{
-  clear: left;
-  float: left;
-  margin: 0 0 0 14%;
 }
 
-
-/*eighth body*/
+/*seventh body*/
 
 .seventh_body{
-  background-color: #538BF4;
+  background-color: #52CBF0;
   height: 100vh;
   width: 100%;
 }
 .seventh_body article{
-  background-color: #ffc04c;
+  background-color: #EEEAC0;
+}
+.seventh_body article:nth-child(2n+2)
+{
+    background: #FEE818;
 }
 .seventh_body article h3{
   color: #002244;
@@ -796,6 +784,12 @@ width:110px;
   color: #002244;
   font-family: 'Baloo Bhaina', cursive;
 }
+.seventh_body img{
+  height: 18vh;
+  width: auto;
+  padding: 0 0 1% 0;
+}
+
 .img-circle{
   height: 20vh;
   width: auto;
@@ -807,6 +801,8 @@ width:110px;
     width: 100%;
   }
 }
+/*light yellow color EEEAC0
+ dark yellow FEE818*/
 #prof-font{
   color: #292929;
   text-align: justify;
@@ -820,12 +816,14 @@ width:110px;
 
 .clickable_icons .contact-btn:hover{
   transform: scale(1.1);
-  background-color: #538BF4;
-  border: 1px solid black;
+  background-color: #52CBF0;dark_blue2F36B5
+  color: white;
+  border: 1px solid white;
 }
 .contact-btn{
-  background-color:#AC2C17;
+  background-color:#FEE818;
   font-family: 'Baloo Bhaina', cursive;
+  color: #002244;
 }
 
 /*.clickable_icons .contact-btn{
