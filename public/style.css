@@ -448,7 +448,7 @@ font-family: 'Baloo Bhaina', cursive;
 }
 @media (max-width:900px){
   .second_body{
-    height: auto;
+    height: 100vh;
     width: 100%;
   }
 }
@@ -488,6 +488,12 @@ font-family: 'Baloo Bhaina', cursive;
   margin-top: 0;
   height: 15vh;
   width: auto;
+}
+@media (max-width: 800px){
+  .third_body .project_title{
+    /*padding: 0 0 0 5%;*/
+    padding-left: 10%;
+  }
 }
 /*.third_body h3{
   color: #273041;
@@ -639,6 +645,10 @@ article:nth-child(2n+2)
      width: 100%;
      padding: 0 0 5% 2%;
    }
+   .fifth_body .project_title{
+     /*padding: 0 0 0 5%;*/
+     padding-left: 10%;
+   }
 }
 /*progress bar start*/
 p{
@@ -757,15 +767,16 @@ width:110px;
 }
 @media (max-width:800px){
    .sixth_body{
-     height: 100vh;
+     height: 145vh;
      width: 100%;
    }
+
 }
 
 /*seventh body*/
 
 .seventh_body{
-  background-color: #52CBF0;
+  background-color: #236B8E;
   height: 100vh;
   width: 100%;
 }
@@ -797,12 +808,14 @@ width:110px;
 }
 @media (max-width:480px){
   .seventh_body{
-    height: auto;
+    height: 100vh;
     width: 100%;
   }
+  .seventh_body .project_title{
+    padding-left: 10%;
+  }
 }
-/*light yellow color EEEAC0
- dark yellow FEE818*/
+
 #prof-font{
   color: #292929;
   text-align: justify;
@@ -816,7 +829,7 @@ width:110px;
 
 .clickable_icons .contact-btn:hover{
   transform: scale(1.1);
-  background-color: #52CBF0;dark_blue2F36B5
+  background-color: #236B8E;
   color: white;
   border: 1px solid white;
 }
@@ -825,10 +838,3 @@ width:110px;
   font-family: 'Baloo Bhaina', cursive;
   color: #002244;
 }
-
-/*.clickable_icons .contact-btn{
-  padding:13px;
-  background-color:#AC2C17;
-  font-size: 1.6em;
-  font-family: 'Baloo Bhaina', cursive;
-}*/
