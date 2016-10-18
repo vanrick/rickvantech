@@ -2,7 +2,6 @@ window.onbeforeunload = function () {
   window.scrollTo(0,0);
 }
 $(document).ready(function () {
-  console.log("appy is happy");
   var trigger = $('.hamburger'),
       overlay = $('.overlay'),
      isClosed = false;
@@ -30,11 +29,9 @@ $(document).ready(function () {
         $('#wrapper').toggleClass('toggled');
   });
 
-  console.log("number of skillbars"+ $('.skillbar').length);
 function waitPlease(){
 
   $('.skillbar').each(function(){
-    console.log('oh no!');
     $(this).find('.skillbar-bar').animate({
       width:$(this).attr('data-percent')
     },6000);
@@ -63,3 +60,5 @@ $(function() {
     }
   });
 });
+
+console.log('( ◑‿◑)ɔ┏🍟--🍔┑٩(^◡^ )');

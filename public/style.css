@@ -16,7 +16,7 @@ body {
   height: 100%;
   background-color: black;
 }*/
-@media (max-width: 767px) /* @grid-float-breakpoint -1 */
+/*@media (max-width: 767px)
 {
   .navbar{
     position: fixed;
@@ -25,7 +25,7 @@ body {
   #wrapper nav{
    position: fixed;
   }
-}
+}*/
 
 .nav .open > a { background-color: transparent; }
 
@@ -397,12 +397,12 @@ font-family: 'Baloo Bhaina', cursive;
   display: inline-block;
 }
 
-@media (max-width:480px){
+/*@media (max-width:480px){
   .logoStash{
     margin: 0 auto;
     display: block;
   }
-}
+}*/
 
 .clickable_icons{
   margin: 2% 0 2% 0;
@@ -439,7 +439,7 @@ font-family: 'Baloo Bhaina', cursive;
   background-color: black;
   font-family: 'Baloo Bhaina', cursive;
 }
-@media (max-width:900px){
+/*@media (max-width:900px){
   .second_body h1{
     margin-top: 10%;
     padding-left: 30%;
@@ -451,7 +451,7 @@ font-family: 'Baloo Bhaina', cursive;
     height: 100vh;
     width: 100%;
   }
-}
+}*/
 .second_body .col-md-offset-5{
  padding-top: 3%;
 
@@ -489,17 +489,10 @@ font-family: 'Baloo Bhaina', cursive;
   height: 15vh;
   width: auto;
 }
-@media (max-width: 800px){
+/*@media (max-width: 800px){
   .third_body .project_title{
-    /*padding: 0 0 0 5%;*/
     padding-left: 10%;
   }
-}
-/*.third_body h3{
-  color: #273041;
-}
-.third_body p{
-  color: #273041;
 }*/
 
 .project_title{
@@ -550,12 +543,12 @@ article:nth-child(2n+2)
   height: 100vh;
   width: 100%;
 }
-@media (max-width:480px){
+/*@media (max-width:480px){
   .fourth_body {
     margin-top: 2%;
     height: 100vh;
   }
-}
+}*/
 .fourth_body .col-md-offset-8{
   padding-top: 2%;
 }
@@ -604,14 +597,6 @@ article:nth-child(2n+2)
 
 /*fifth body*/
 
-/*.fifth_body{
-  background-color: #B4E5F3;
-  height: 100vh;
-  width: 100%;
-}*/
-
-/*sixth body*/
-
 .fifth_body{
   background-color: #516790;
   height: 120vh;
@@ -630,10 +615,7 @@ article:nth-child(2n+2)
   padding: 1% 0 0 0;
 }
 
-/*.fifth_body .skillz-box{
- padding: 0 0 1% 0;
-}*/
-@media (max-width:1230px){
+/*@media (max-width:1230px){
   .skills-box {
     margin: 0;
   }
@@ -646,10 +628,9 @@ article:nth-child(2n+2)
      padding: 0 0 5% 2%;
    }
    .fifth_body .project_title{
-     /*padding: 0 0 0 5%;*/
      padding-left: 10%;
    }
-}
+}*/
 /*progress bar start*/
 p{
   color:#525252;
@@ -765,13 +746,13 @@ width:110px;
   font-family: 'Baloo Bhaina', cursive;
   color: black;
 }
-@media (max-width:800px){
+/*@media (max-width:800px){
    .sixth_body{
      height: 145vh;
      width: 100%;
    }
 
-}
+}*/
 
 /*seventh body*/
 
@@ -806,7 +787,7 @@ width:110px;
   width: auto;
   border-radius: 50%;
 }
-@media (max-width:480px){
+/*@media (max-width:480px){
   .seventh_body{
     height: 100vh;
     width: 100%;
@@ -814,7 +795,7 @@ width:110px;
   .seventh_body .project_title{
     padding-left: 10%;
   }
-}
+}*/
 
 #prof-font{
   color: #292929;
@@ -837,4 +818,263 @@ width:110px;
   background-color:#FEE818;
   font-family: 'Baloo Bhaina', cursive;
   color: #002244;
+}
+
+/*media queries for mobile*/
+
+/*[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}*/
+
+/* Large desktop */
+/*@media (min-width: 1200px) {
+  .navbar{
+    position: fixed;
+    min-height: 20px;
+  }
+  #wrapper nav{
+   position: fixed;
+  }
+  .second_body h1{
+    margin-top: 10%;
+    padding-left: 30%;
+    height: auto;
+  }
+  .second_body{
+    height: 100vh;
+    width: 100%;
+  }
+  .navbar{
+    position: fixed;
+    min-height: 20px;
+  }
+  #wrapper nav{
+   position: fixed;
+  }
+  .third_body .project_title{
+    padding-left: 10%;
+  }
+  .fourth_body {
+    margin-top: 2%;
+    height: 100vh;
+  }
+  .skills-box {
+    margin: 0;
+  }
+   .fifth_body{
+     height: 100vh;
+     width: 100%;
+     padding: 0 0 5% 2%;
+   }
+   .fifth_body .project_title{
+     padding-left: 10%;
+   }
+   .sixth_body{
+     height: 145vh;
+     width: 100%;
+   }
+   .seventh_body{
+     height: 100vh;
+     width: 100%;
+   }
+   .seventh_body .project_title{
+     padding-left: 10%;
+   }
+ }*/
+
+/* Portrait tablet to landscape and desktop */
+/*@media (min-width: 768px) and (max-width: 979px) {
+  .navbar{
+    position: fixed;
+    min-height: 20px;
+  }
+  #wrapper nav{
+   position: fixed;
+  }
+  .second_body h1{
+    margin-top: 10%;
+    padding-left: 30%;
+    height: auto;
+  }
+  .second_body{
+    height: 100vh;
+    width: 100%;
+  }
+  .navbar{
+    position: fixed;
+    min-height: 20px;
+  }
+  #wrapper nav{
+   position: fixed;
+  }
+  .third_body .project_title{
+    padding-left: 10%;
+  }
+  .fourth_body {
+    margin-top: 2%;
+    height: 100vh;
+  }
+  .skills-box {
+    margin: 0;
+  }
+   .fifth_body{
+     height: 100vh;
+     width: 100%;
+     padding: 0 0 5% 2%;
+   }
+   .fifth_body .project_title{
+     padding-left: 10%;
+   }
+   .sixth_body{
+     height: 145vh;
+     width: 100%;
+   }
+   .seventh_body{
+     height: 100vh;
+     width: 100%;
+   }
+   .seventh_body .project_title{
+     padding-left: 10%;
+   }
+}*/
+
+/* Landscape phone to portrait tablet */
+/*@media (max-width: 767px) {
+  .navbar{
+    position: fixed;
+    min-height: 20px;
+  }
+  #wrapper nav{
+   position: fixed;
+  }
+  .second_body h1{
+    margin-top: 10%;
+    padding-left: 30%;
+    height: auto;
+  }
+  .second_body{
+    height: 100vh;
+    width: 100%;
+  }
+  .navbar{
+    position: fixed;
+    min-height: 20px;
+  }
+  #wrapper nav{
+   position: fixed;
+  }
+  .third_body .project_title{
+    padding-left: 10%;
+  }
+  .fourth_body {
+    margin-top: 2%;
+    height: 100vh;
+  }
+  .skills-box {
+    margin: 0;
+  }
+   .fifth_body{
+     height: 100vh;
+     width: 100%;
+     padding: 0 0 5% 2%;
+   }
+   .fifth_body .project_title{
+     padding-left: 10%;
+   }
+   .sixth_body{
+     height: 145vh;
+     width: 100%;
+   }
+   .seventh_body{
+     height: 100vh;
+     width: 100%;
+   }
+   .seventh_body .project_title{
+     padding-left: 10%;
+   }
+}*/
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .logoStash{
+    margin: 0 auto;
+    display: block;
+  }
+  .navbar{
+    position: fixed;
+    min-height: 20px;
+  }
+  #wrapper nav{
+   position: fixed;
+  }
+  .second_body h1{
+    /*margin: 10% 0 0 0;*/
+    padding: 0 0 0 14%;
+    height: auto;
+  }
+  .second_body{
+    height: 110vh;
+    width: 100%;
+  }
+  .second_body .col-md-6{
+   text-align: center;
+  }
+  .navbar{
+    position: fixed;
+    min-height: 20px;
+  }
+  .third_body .project_title{
+    padding-left: 10%;
+  }
+  .fourth_body {
+    padding: 0 0 2% 0;
+    height: auto;
+  }
+  .skillz-box {
+    margin: 0 0 0 12%
+  }
+   .fifth_body{
+     height: auto;
+     width: 100%;
+     padding: 0 0 5% 0;
+   }
+   .fifth_body .project_title{
+     padding-left: 10%;
+   }
+   .sixth_body{
+     height: auto;
+     width: 100%;
+     padding: 0 0 5% 0;
+   }
+   .sixth_body .row{
+    margin: 0 auto;
+   }
+   .sixth_body #down2{
+     margin: 0 5% 0 0;
+   }
+   .seventh_body{
+     height: 100vh;
+     width: 100%;
+   }
+   .seventh_body .project_title{
+     padding-left: 10%;
+   }
+   .seventh_body .col-md-offset-5{
+     margin: 0 0 0 25%;
+   }
 }
