@@ -668,9 +668,7 @@ width:110px;
   height: 100vh;
   width: 100%;
 }
-.sixth_body #down{
- float: right;
- margin: 0 16% 0 0;
+.sixth_body .down{
  padding-top: 5%;
 }
 .sixth_body h1{
@@ -678,11 +676,6 @@ width:110px;
   color: #273041;
 }
 
-.sixth_body #down2{
-  float: left;
-  margin: 0 0 0 16%;
-  padding-top: 5%;
-}
 .sixth_body img{
   height: 10vh;
   width: auto;
@@ -1038,11 +1031,21 @@ width:110px;
     width: 100%;
   }
   .fourth_body{
-    height: 105vh;
+    height: 106vh;
     width: 100%;
   }
   .fifth_body{
     height: 100vh;
+    width: 100%;
+  }
+}
+@media all and (max-width: 708px){
+  .sixth_body{
+    height: 155vh;
+    width: 100%;
+  }
+  .seventh_body{
+    height: 102vh;
     width: 100%;
   }
 }
