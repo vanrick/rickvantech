@@ -29,6 +29,8 @@ app.controller('UnderController', function($scope, $http, $route, $routeParams) 
       clearInterval($scope.view.x);
       $scope.view.schedule = "EXPIRED";
     }
-
+    
+    $scope.$apply()
   }, 1000);
+
 })
