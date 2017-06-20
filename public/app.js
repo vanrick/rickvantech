@@ -3,9 +3,13 @@ var app = angular.module("personal-site", ['ngRoute']);
 
 app.config(function($routeProvider, $locationProvider, $routeProvider) {
     $routeProvider
+      // .when('/', {
+      //   templateUrl: 'views/home.html',
+      //   controller: 'HomeController'
+      // })
       .when('/', {
-        templateUrl: 'views/home.html',
-        controller: 'HomeController'
+        templateUrl: 'views/underConstruction.html',
+        controller: 'UnderController'
       })
       // .when('/checkout', {
       //   templateUrl: 'views/checkout.html',
