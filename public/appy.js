@@ -25,10 +25,10 @@
 //       }
 //   }
 //
-//   $('[data-toggle="offcanvas"]').click(function () {
-//         $('#wrapper').toggleClass('toggled');
-//   });
-//
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });
+
 // function waitPlease(){
 //
 //   $('.skillbar').each(function(){
