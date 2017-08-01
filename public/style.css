@@ -1,176 +1,13 @@
-/* Set height to 100% for body and html to enable the background image to cover the whole page: */
 body, html {
     height: 100%
 }
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:800');
+/*end fonts*/
 
-.bgimg {
-    /* Background image */
-    background-image: url('images/bonsai-wallpaper.jpg');
-    /* Full-screen */
-    height: 100vh;
-    /* Center the background image */
-    background-position: center;
-    /* Scale and zoom in the image */
-    background-size: cover;
-    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
-    position: relative;
-    /* Add a white text color to all elements inside the .bgimg container */
-    color: white;
-    /* Add a font */
-    font-family: "Courier New", Courier, monospace;
-    /* Set the font-size to 25 pixels */
-    font-size: 25px;
-}
+/*navbar start*/
 
-/* Position text in the top-left corner */
-.topleft {
-    position: absolute;
-    top: 0;
-    left: 16px;
-}
-
-/* Position text in the bottom-left corner */
-.bottomleft {
-    position: absolute;
-    bottom: 0;
-    left: 16px;
-}
-
-/* Position text in the middle */
-.middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-
-.icon{
-  height: 15vh;
-  width: auto;
-}
-/*start of twitter profile*/
-.span12 {text-align: center}
-
-.twPc-div {
-    background: #fff none repeat scroll 0 0;
-    border: 1px solid #e1e8ed;
-    border-radius: 6px;
-    margin: 2% 0 0 0;
-    height: 300px;
-    max-width: 740px; // orginal twitter width: 290px;
-}
-img{
-  vertical-align: middle;
-  padding:4px;
-  border:.03px solid black;
-  border-radius: 6px;
-}
-.twPc-bg {
-    background-image: url("https://pbs.twimg.com/profile_banners/50988711/1384539792/600x200");
-    background-position: 0 50%;
-    background-size: 100% auto;
-    border-bottom: 1px solid #e1e8ed;
-    border-radius: 4px 4px 0 0;
-    height: 130px;
-    width: 100%;
-}
-.twPc-block {
-    display: block !important;
-}
-.twPc-avatarLink {
-    background-color: #fff;
-    border-radius: 6px;
-    display: inline-block !important;
-    float: left;
-    margin: -40px 5px 0 8px;
-    max-width: 100%;
-    padding: 1px;
-    vertical-align: bottom;
-}
-.twPc-divUser {
-    margin: 5px 0 0;
-}
-.twPc-divName {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21px;
-    color: black;
-}
-.twPc-divName a {
-    color: inherit !important;
-}
-.twPc-divStats {
-    margin-left: 11px;
-    padding: 10px 0;
-}
-.twPc-Arrange {
-    box-sizing: border-box;
-    display: table;
-    margin: 0;
-    min-width: 100%;
-    padding: 0;
-    table-layout: auto;
-}
-ul.twPc-Arrange {
-    list-style: outside none none;
-    margin: 0;
-    padding: 0;
-}
-.twPc-ArrangeSizeFit {
-    display: table-cell;
-    padding: 0;
-    vertical-align: top;
-}
-.twPc-ArrangeSizeFit a:hover {
-    text-decoration: none;
-}
-.twPc-StatValue {
-    display: block;
-    font-size: 18px;
-    font-weight: 500;
-    transition: color 0.15s ease-in-out 0s;
-}
-.twPc-StatLabel {
-    color: #8899a6;
-    font-size: 10px;
-    letter-spacing: 0.02em;
-    overflow: hidden;
-    text-transform: uppercase;
-    transition: color 0.15s ease-in-out 0s;
-}
-.twPc-block {
-    display: block !important;
-}
-.twPc-button {
-    margin: -35px -10px 0;
-    text-align: right;
-    width: 100%;
-    color: white;
-    font-weight: 900;
-}
-.twPc-button button{
-  font-weight: 900;
-  font-size: 1.9rem;
-}
-.font1{
-  font-weight: 900;
-  -webkit-text-stroke: 1px black;
- color: white;
- text-shadow:
-     3px 3px 0 #000,
-   -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
-     font-size: 6rem;
-}
-/*new fullpage layout*/
-.tenEighty{
-  height: 100vh;
-  width: 100vw;
-}
 #navbar{
   width: 100%;
   height: 8.5vh;
@@ -179,4 +16,986 @@ ul.twPc-Arrange {
   z-index: 999;
   background-color: #000;
   opacity: 0.8;
+  display: none;
 }
+#navbar.hidden{
+  -webkit-transition: all 0.7s ease;
+-moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+     transition: all 0.7s ease;
+  display: block !important;
+}
+#navbar img{
+  height: 5vh;
+  width: auto;
+  background-color: gray;
+}
+.navbar-brand {
+    height: 50px;
+    padding: 11.8px 11.8px;
+
+}
+.navbar-nav>li>a {
+    padding-top: 11.8px;
+    padding-bottom: 11.8px;
+    float: left;
+}
+.navActive{
+  background: #x;
+}
+
+/*navbar end*/
+/*section1*/
+#section1{
+  height: 100vh;
+  width: 100%;
+  background-image: url('images/fullPage/sailing2.jpg');
+  background-size: cover;
+  background-position: center;
+  display: table;
+}
+#section1 div h1{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-weight: bolder;
+  font-size: 50px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+#section1 div{
+  margin: 20% 0 0 8%;
+}
+
+/*bouncing down arrow*/
+body {
+  background: gainsboro;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left:-20px;
+}
+.arrow img{
+  height: auto;
+  width: 16%;
+  border: none;
+}
+.bounce {
+	-webkit-animation-name: bounce;
+	-moz-animation-name: bounce;
+	-o-animation-name: bounce;
+	animation-name: bounce;
+}
+.animated{-webkit-animation-fill-mode:both;
+-moz-animation-fill-mode:both;
+-ms-animation-fill-mode:both;
+-o-animation-fill-mode:both;
+
+            animation-iteration-count: infinite;
+       -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+
+animation-fill-mode:both;
+-webkit-animation-duration:2s;
+-moz-animation-duration:2s;
+-ms-animation-duration:2s;
+-o-animation-duration:2s;
+animation-duration:2s;
+}
+
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+/*end bouncing down arrow*/
+/*end section1*/
+
+/*section2*/
+/*underline animation*/
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #DD0048;
+  /*#2098d1*/
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+/*end underline animation*/
+#section2{
+  height: 100vh;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+#section2::after{
+  content: "";
+  background-image: url('images/fullPage/sailing9.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.section2-center{
+  margin: 5% 0 0 0;
+}
+.section2-center div:nth-child(2){
+  margin: 0 0 0 5%;
+}
+.section2-center div:nth-child(3){
+  margin: 5% 0 0 -10%;
+}
+#section2 img{
+  margin: 12% 0 0 28%;
+  height: 44vh;
+  width: auto;
+  border: none;
+  border-radius: 5%;
+}
+.quote h2{
+  font-family: 'Rajdhani', sans-serif;
+  color: #DD0048;
+  /*#C1FE0C*/
+  -webkit-text-stroke-width: .15px;
+  -webkit-text-stroke-color: black;
+  font-weight: 900;
+  font-size: 3.5em;
+  letter-spacing: 2.5px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.my-info h2{
+  color: white;
+  margin: 8% 0 0 0;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: .1em;
+}
+.my-info{
+  margin: 28.8% 0 0 -50%;
+  text-align: center;
+  vertical-align: middle;
+}
+#section2 a{
+  text-decoration: none;
+}
+/*end section2*/
+/*section3*/
+.slide1{
+  height: 100vh;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.slide1::after{
+  content: "";
+  background-image: url('images/fullPage/sailing11.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.slide2{
+  height: 100vh;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.slide2::after{
+  content: "";
+  background-image: url('images/fullPage/sailing6.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.slide3{
+  height: 100vh;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.slide3::after{
+  content: "";
+  background-image: url('images/fullPage/sailing7.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.slide4{
+  height: 100vh;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.slide4::after{
+  content: "";
+  background-image: url('images/fullPage/sailing1.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.slide5{
+  height: 100vh;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.slide5::after{
+  content: "";
+  background-image: url('images/fullPage/sailing4.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.slide6{
+  height: 100vh;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.slide6::after{
+  content: "";
+  background-image: url('images/fullPage/sailingwp7.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.slide7{
+  height: 100vh;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.slide7::after{
+  content: "";
+  background-image: url('images/fullPage/sailing8.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.slide8{
+  height: 100vh;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.slide8::after{
+  content: "";
+  background-image: url('images/fullPage/sailing10.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.slide-div div{
+  height: 100vh;
+  width: 65%;
+}
+
+.slide-div{
+  padding: 5% 0 0 25%;
+}
+
+.slide-div img{
+  height: 53vh;
+  width: 100%;
+}
+.slide-div h1{
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2.3em;
+  letter-spacing: 9.2px;
+}
+.slide-div p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+}
+.vertical-text{
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+  /*float: left;*/
+  margin: 0 0 -5% -10%;
+}
+
+/*end section3*/
+/*section 4*/
+#section4 {
+  /*width: 200px;
+  height: 200px;*/
+  height: 100vh;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+#section4::after{
+  content: "";
+  background-image: url('images/fullPage/sailingwp3.jpg');
+  background-size: cover;
+  background-position: center;
+  /*height: 100vh;
+  width: 100%;*/
+  opacity: 0.12;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#section4 .row h1{
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 5em;
+  margin: 7% 0 0 32%;
+  letter-spacing: 9.2px;
+}
+#section4 .row ul li{
+  list-style-type: none;
+  padding: 0 0 0 -45%;
+}
+#section4 h2{
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 4.2px;
+  font-weight: 300;
+}
+.skills-p p{
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+}
+#section4 row {
+  font-size: 1.1em;
+  font-family: 'Raleway', sans-serif;
+  margin: 0 0 0 0;
+}
+#section4 p{
+  font-size: 1.2em;
+  font-family: 'Raleway', sans-serif;
+}
+
+/*end of section 4*/
+/*Conclusion page section 5*/
+/*h1 text design*/
+.center-text{
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
+  margin: 0;
+  position: relative;
+  float: left;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.center-text:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 4px solid #DD0048;
+}
+/*end h1 text design*/
+#section5{
+  height: 100vh;
+  width: 100%;
+  background-image: url('images/fullPage/sailingdark.jpg');
+  background-size: cover;
+  background-position: center;
+  display: table;
+}
+.center-paragraphs{
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  color: Gainsboro;
+  position: relative;
+  float: left;
+  /*padding: 50% 0 0 0;*/
+  /*left: 18%;*/
+  text-align: center;
+  transform: translate(140%,110%);
+}
+
+#section5 .center-paragraphs button{
+  font-weight: normal;
+  letter-spacing: 3.2px;
+  font-size: 25px;
+  outline: #DD0048 solid 3px;
+  color: white;
+}
+.clickable_icons button{
+  margin: 0 2% 2% 0;
+  transition: all .2s ease-in-out;
+}
+
+#section5 .center-paragraphs .clickable_icons button:hover{
+  /*transform: scale(1.1);*/
+  color: #040C20;
+  outline: #DD0048 solid 3px;
+  background-color: Gainsboro;
+  border: 1px solid black;
+}
+#section5 .center-paragraphs button{
+  background-color: #040C20;
+  font-family: serif;
+  border-radius: 0;
+}
+/*end conclusion page*/
+/*media queries*/
+/*iphone 6s plus*/
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    /*navbar*/
+    #navbar {
+      padding: 0 0 0 5%;
+    }
+    /*navbar end*/
+    /*section 1*/
+    #section1 div{
+      margin: 20% 0 0 1%;
+    }
+    .arrow img{
+      height: auto;
+      width: 30%;
+      border: none;
+    }
+    /*end section 1*/
+    /*section 2*/
+    .section2-center{
+      margin: 5% 0 0 0;
+    }
+    .section2-center div:nth-child(2){
+      margin: -25% 0 0 24%;
+    }
+    .section2-center div:nth-child(3){
+      margin: 5% 0 0 0;
+    }
+    .quote h2{
+      font-size: 2.5em;
+    }
+    #section2 img{
+      margin: 12% 0 0 25%;
+      height: 33vh;
+      width: auto;
+      border: none;
+      border-radius: 5%;
+    }
+    /*end section 2*/
+    /*section 3*/
+    .slide-div div{
+      height: 100vh;
+      width: 85%;
+    }
+    .slide-div div img{
+      height: 43vh;
+      width: 100%;
+    }
+    .slide-div{
+      padding: 15% 0 0 12%;
+    }
+    /*end section 3*/
+    /*section 4*/
+    #section4 .row h1{
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 3.1em;
+      margin: 13.4%;
+      letter-spacing: 9.2px;
+    }
+    #section4 .about-div div:nth-child(2){
+      margin: 0 0 3% 35%;
+    }
+    #section4 h2{
+      font-family: 'Raleway', sans-serif;
+      letter-spacing: 4.2px;
+      font-weight: 300;
+        margin: 0 0 0 35%;
+    }
+    .skills-p p{
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+    }
+    .skills-p{
+      overflow: scroll;
+      height: 28vh;
+      width: auto;
+    }
+    #section4 .about-div div:nth-child(4) p{
+      width: 80%;
+      text-align: center;
+      margin: 0 0 0 8%;
+    }
+    #section4 row {
+      font-size: 1.1em;
+      font-family: 'Raleway', sans-serif;
+      margin: 0 0 0 0;
+    }
+    #section4 p{
+      font-size: 1.2em;
+      font-family: 'Raleway', sans-serif;
+
+    }
+    /*end section 4*/
+    /*section 5*/
+    .center-paragraphs{
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 20px;
+      color: Gainsboro;
+      position: relative;
+      float: left;
+      /*left: 18%;*/
+      text-align: center;
+      transform: translate(10%, 150%);
+    }
+    /*end section 5*/
+}
+/*iphone 6s plus end*/
+/*iphone 6 */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    /*navbar*/
+    #navbar {
+      padding: 0 0 0 5%;
+    }
+    /*navbar end*/
+    /*section 1*/
+    #section1 div{
+      margin: 20% 0 0 1%;
+    }
+    .arrow img{
+      height: auto;
+      width: 30%;
+      border: none;
+    }
+    /*end section 1*/
+    /*section 2*/
+    .section2-center{
+      margin: 5% 0 0 0;
+    }
+    .section2-center div:nth-child(2){
+      margin: -25% 0 0 24%;
+    }
+    .section2-center div:nth-child(3){
+      margin: 5% 0 0 0;
+    }
+    .quote h2{
+      font-size: 2.5em;
+    }
+    #section2 img{
+      margin: 12% 0 0 25%;
+      height: 33vh;
+      width: auto;
+      border: none;
+      border-radius: 5%;
+    }
+    /*end section 2*/
+    /*section 3*/
+    .slide-div div{
+      height: 100vh;
+      width: 85%;
+    }
+    .slide-div div img{
+      height: 43vh;
+      width: 100%;
+    }
+    .slide-div{
+      padding: 15% 0 0 12%;
+    }
+    /*end section 3*/
+    /*section 4*/
+    #section4 .row h1{
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 3.1em;
+      margin: 13.4%;
+      letter-spacing: 9.2px;
+    }
+    #section4 .about-div div:nth-child(2){
+      margin: 0 0 3% 35%;
+    }
+    #section4 h2{
+      font-family: 'Raleway', sans-serif;
+      letter-spacing: 4.2px;
+      font-weight: 300;
+        margin: 0 0 0 35%;
+    }
+    .skills-p p{
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+    }
+    .skills-p{
+      overflow: scroll;
+      height: 28vh;
+      width: auto;
+    }
+    #section4 .about-div div:nth-child(4) p{
+      width: 80%;
+      text-align: center;
+      margin: 0 0 0 8%;
+    }
+    #section4 row {
+      font-size: 1.1em;
+      font-family: 'Raleway', sans-serif;
+      margin: 0 0 0 0;
+    }
+    #section4 p{
+      font-size: 1.2em;
+      font-family: 'Raleway', sans-serif;
+
+    }
+    /*end section 4*/
+    /*section 5*/
+    .center-paragraphs{
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 20px;
+      color: Gainsboro;
+      position: relative;
+      float: left;
+      /*left: 18%;*/
+      text-align: center;
+      transform: translate(10%, 150%);
+    }
+    /*end section 5*/
+}
+/*iphone 6 end*/
+/*samsung s5*/
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3) {
+    /*navbar*/
+    #navbar {
+      padding: 0 0 0 5%;
+      height: 9.5vh;
+    }
+    /*navbar end*/
+    /*section 1*/
+    #section1 div{
+      margin: 18% 0 0 1%;
+    }
+    .arrow img{
+      height: auto;
+      width: 30%;
+      border: none;
+    }
+    /*end section 1*/
+    /*section 2*/
+    .section2-center{
+      margin: 5% 0 0 0;
+    }
+    .section2-center div:nth-child(2){
+      margin: -25% 0 0 24%;
+    }
+    .section2-center div:nth-child(3){
+      margin: 5% 0 0 0;
+    }
+    .my-info h2{
+      font-size: 1.8em;
+    }
+    .quote h2{
+      font-size: 2.3em;
+    }
+    #section2 img{
+      margin: 12% 0 0 25%;
+      height: 32vh;
+      width: auto;
+      border: none;
+      border-radius: 5%;
+    }
+    /*end section 2*/
+    /*section 3*/
+    .slide-div div{
+      height: 100vh;
+      width: 85%;
+    }
+    .slide-div div img{
+      height: 39vh;
+      width: 100%;
+    }
+    .slide-div{
+      padding: 15% 0 0 12%;
+    }
+    /*end section 3*/
+    /*section 4*/
+    #section4 .row h1{
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 2.8em;
+      margin: 16.4% 0 0 13%;
+      width: 100vw;
+      letter-spacing: 9.2px;
+    }
+    #section4 .about-div div:nth-child(2){
+      margin: 0 0 3% 35%;
+    }
+    #section4 h2{
+      font-family: 'Raleway', sans-serif;
+      letter-spacing: 2px;
+      font-weight: 300;
+      font-size: 1.8em;
+      margin: 0 0 0 35%;
+    }
+    .skills-p p{
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+      font-size: 0.2em;
+    }
+    .skills-p{
+      overflow: scroll;
+      height: 28vh;
+      width: auto;
+    }
+    #section4 .about-div div:nth-child(4) p{
+      width: 95%;
+      text-align: center;
+      margin: 0 0 0 2%;
+    }
+    #section4 row {
+      font-size: 1.1em;
+      font-family: 'Raleway', sans-serif;
+      margin: 0 0 0 0;
+    }
+    #section4 p{
+      font-size: 1.2em;
+      font-family: 'Raleway', sans-serif;
+
+    }
+    /*end section 4*/
+    /*section 5*/
+    .center-paragraphs{
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 20px;
+      color: Gainsboro;
+      position: relative;
+      float: left;
+      /*left: 18%;*/
+      text-align: center;
+      transform: translate(10%, 125%);
+    }
+    .center-paragraphs h1{
+      font-size: 2.3em;
+    }
+    /*end section 5*/
+}
+/*samsung s5 end*/
+/*iphone 5 and 5s*/
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    /*navbar*/
+    #navbar {
+      padding: 0 0 0 5%;
+      height: 10vh;
+    }
+
+    /*navbar end*/
+    /*section 1*/
+    #section1 div{
+      margin: 20% 0 0 1%;
+    }
+    .arrow img{
+      height: auto;
+      width: 30%;
+      border: none;
+    }
+    /*end section 1*/
+    /*section 2*/
+    .section2-center{
+      margin: 5% 0 0 0;
+    }
+    .section2-center div:nth-child(2){
+      margin: -25% 0 0 24%;
+    }
+    .section2-center div:nth-child(3){
+      margin: 5% 0 0 0;
+    }
+    .quote h2{
+      font-size: 2em;
+    }
+    .my-info h2{
+      font-size: 2em;
+    }
+    #section2 img{
+      margin: 12% 0 0 25%;
+      height: 30vh;
+      width: auto;
+      border: none;
+      border-radius: 5%;
+    }
+    /*end section 2*/
+    /*section 3*/
+    .slide-div div{
+      height: 100vh;
+      width: 82%;
+    }
+    .slide-div div img{
+      height: 39vh;
+      width: 100%;
+    }
+    .slide-div{
+      padding: 15% 0 0 16%;
+    }
+    .slide-div p{
+      font-size: 1em;
+    }
+    /*end section 3*/
+    /*section 4*/
+    #section4 .row h1{
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 2.2em;
+      margin: 14.5% 0 8% 16%;
+      letter-spacing: 9.2px;
+      height: 0vh;
+      width: 100%;
+    }
+    #section4 .about-div div:nth-child(2){
+      margin: 0 0 7% 35%;
+    }
+
+    #section4 h2{
+      font-family: 'Raleway', sans-serif;
+      letter-spacing: 4.2px;
+      font-weight: 300;
+      margin: 0 0 0 35%;
+      font-size: 1.8em;
+    }
+    .skills-p p{
+      font-family: 'Raleway', sans-serif;
+    }
+    .skills-p{
+      overflow: scroll;
+      height: 28vh;
+      width: auto;
+    }
+    #section4 .about-div div:nth-child(4) p{
+      width: 92%;
+      text-align: center;
+      margin: 0 0 0 8%;
+    }
+    #section4 .about-div div:nth-child(4) h2{
+      margin: -20% 0 0 35%;
+    }
+    #section4 row {
+      font-size: 1.1em;
+      font-family: 'Raleway', sans-serif;
+      margin: 0 0 0 0;
+    }
+    #section4 p{
+      font-size: 1.2em;
+      font-family: 'Raleway', sans-serif;
+
+    }
+    /*end section 4*/
+    /*section 5*/
+    .center-paragraphs{
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 17px;
+      color: Gainsboro;
+      position: relative;
+      float: left;
+      /*left: 18%;*/
+      text-align: center;
+      transform: translate(2%, 80%);
+    }
+    /*end section 5*/
+}
+/*iphone 5 and 5s end*/
