@@ -999,3 +999,106 @@ animation-duration:2s;
     /*end section 5*/
 }
 /*iphone 5 and 5s end*/
+
+/*samsung s7*/
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 4) {
+    /*navbar*/
+    #navbar {
+      padding: 0 0 0 5%;
+      height: 9.5vh;
+    }
+    /*navbar end*/
+    /*section 1*/
+    #section1 div{
+      margin: 18% 0 0 1%;
+    }
+    .arrow img{
+      height: auto;
+      width: 30%;
+      border: none;
+    }
+    /*end section 1*/
+    /*section 2*/
+    .section2-center{
+      margin: 5% 0 0 0;
+    }
+    .section2-center div:nth-child(2){
+      margin: -25% 0 0 24%;
+    }
+    .section2-center div:nth-child(3){
+      margin: 5% 0 0 0;
+    }
+    .my-info h2{
+      font-size: 1.8em;
+    }
+    .quote h2{
+      font-size: 2.3em;
+    }
+    #section2 img{
+      margin: 12% 0 0 25%;
+      height: 32vh;
+      width: auto;
+      border: none;
+      border-radius: 5%;
+    }
+    /*end section 2*/
+    /*section 3*/
+    .slide-div div{
+      height: 100vh;
+      width: 85%;
+    }
+    .slide-div div img{
+      height: 39vh;
+      width: 100%;
+    }
+    .slide-div{
+      padding: 15% 0 0 12%;
+    }
+    /*end section 3*/
+    /*section 4*/
+    #section4 .row h1{
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 2.8em;
+      margin: 16.4% 0 0 13%;
+      width: 100vw;
+      letter-spacing: 9.2px;
+    }
+    #section4 .about-div div:nth-child(2){
+      margin: 0 0 3% 35%;
+    }
+    #section4 h2{
+      font-family: 'Raleway', sans-serif;
+      letter-spacing: 2px;
+      font-weight: 300;
+      font-size: 1.8em;
+      margin: 0 0 0 35%;
+    }
+    .skills-p p{
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+      font-size: 0.2em;
+    }
+    .skills-p{
+      overflow: scroll;
+      height: 28vh;
+      width: auto;
+    }
+    #section4 .about-div div:nth-child(4) p{
+      width: 95%;
+      text-align: center;
+      margin: 0 0 0 2%;
+    }
+    #section4 row {
+      font-size: 1.1em;
+      font-family: 'Raleway', sans-serif;
+      margin: 0 0 0 0;
+    }
+    #section4 p{
+      font-size: 1.2em;
+      font-family: 'Raleway', sans-serif;
+
+    }
+    /*s7 end*/
